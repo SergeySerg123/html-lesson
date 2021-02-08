@@ -1,0 +1,134 @@
+$gray-color: #bec9da;
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(159, 118, 226);  
+    display: flex;
+    justify-content: center;
+
+
+    .header__root__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: inherit;
+        width: 992px; 
+    }
+}
+
+// <!-- Logo --> 
+
+.header__logo__wrapper {
+    
+}
+
+// <! -- End logo -->
+
+// <!-- Header icons -->
+
+.header__icons__wrapper {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .bell__icon {
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+}
+
+.header__avatar__circle {
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 15px;
+    position: relative;
+    
+
+    .avatar__circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8991c;
+        height: inherit;
+        border-radius: 50%;   
+        cursor: pointer;   
+
+        .avatar__circle__value {
+            font-size: 16pt;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}
+
+// <!-- Hidden menu -->
+.header__avatar__circle .header__menu {
+    display: none;
+    position: absolute;
+    left: -140px;
+    top: 50px;
+    height: 160px;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.06);
+}
+
+ // TODO: transition
+.header__avatar__circle:hover .header__menu {
+    display: block;
+    opacity: 1;
+    transition: ease-in-out 5s;
+}
+
+
+.menu__title {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu__separator {
+    width: 80%;
+    height: 0.5px;
+    background-color: #aab3bd;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 10px;
+    font-size: 14pt;
+    margin-top: 5px;
+
+    li {
+        margin: 10px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            background-color: $gray-color;
+            cursor: pointer;
+        }
+    }
+
+    span {
+        padding: 0 10px;
+    }
+}
+
+
+// <!-- Hidden menu -->
+
+// <!-- End Header icons -->
