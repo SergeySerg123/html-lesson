@@ -65,3 +65,30 @@
 
 }
     // END QA BOX
+
+    // JS BOX
+.js-box {
+    .js__text__wrapper {
+        position: absolute;
+        transition:0.5s;
+        transform: scaleX(1);
+    }
+
+    &:hover {
+        .js__text__wrapper {
+            transform: scaleX(0);
+        }
+    }
+}
+    // END JS BOX
+
+    // Java BOX
+.java-box {
+    transition:0.5s;
+    transform: scaleY(1);
+
+    &:hover {
+        transform: scaleY(0);
+    }
+}
+    // End Java BOX
