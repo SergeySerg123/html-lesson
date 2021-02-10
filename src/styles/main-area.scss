@@ -33,7 +33,15 @@ main {
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: rgb(209, 252, 93);
+    background-color: #fff;
+
+    .image__wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .qa-box {
@@ -41,7 +49,17 @@ main {
     grid-column-end: 1;
     grid-row-start: 3;
     grid-row-end: 5;
-    background-color: rgb(93, 220, 252);
+    background-color: #52bf77;
+
+    .qa__text__wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 56pt;
+        color: #fff;
+    }
 }
 
 .js-box {
@@ -49,13 +67,39 @@ main {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 4;
-    background-color: rgb(180, 245, 2);
+    background-color:#f7cf69;
+
+    .js__text__wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        font-size: 60pt;
+        font-weight: 900;
+        color: #000;
+    }
+
+    span {
+        margin-right: 10px;
+    }
 }
 
 .java-box {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 4;
+    background-color: #e12b4c;
+
+    .java__text__wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28pt;
+        color: #fff;
+    }
 }
 
 .extended-box {
@@ -63,7 +107,6 @@ main {
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 5;
-    background-color: rgb(193, 11, 248);
 }
 
 .extended-grid-container {
@@ -78,7 +121,17 @@ main {
         grid-column-end: 6;
         grid-row-start: 1;
         grid-row-end: 3;
-        background-color: rgb(11, 35, 248);
+        background-color: #8893c0;
+
+        .php__text__wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28pt;
+            color: #000;
+        }
     }
 
     .dotnet-box {
@@ -86,7 +139,17 @@ main {
         grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 6;
-        background-color: rgb(247, 5, 226);
+        background-color: #642077;
+
+        .dotnet__text__wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 56pt;
+            color: #fff;
+        }
     }
 
 }
@@ -95,11 +158,8 @@ main {
     grid-column-start: 4;
     grid-column-end: 6;
     grid-row-start: 3;
-    grid-row-end: 6;
-    background-color: rgb(5, 231, 247);
-    
-    
-    
+    grid-row-end: 6;   
+
     .info-grid-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -107,23 +167,55 @@ main {
         gap: 0px 0px;
         height: 100%;
     
-    
         .events-box {
             grid-column-start: 1;
             grid-row-start: 1;
             grid-row-end: 3;
+            background-color: #2d99ff;
+
+            .events__text__wrapper {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14pt;
+                color: #fff;
+            }
         }
     
         .blog-box {
             grid-column-start: 1;
             grid-row-start: 3;
-            grid-row-end: 5; 
+            grid-row-end: 5;
+            background-color: #0443a3;
+
+            .blog__text__wrapper {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14pt;
+                color: #fff;
+            }
         }
     
         .contacts-box {
             grid-column-start: 1;
             grid-row-start: 5;
             grid-row-end: 6;
+            background-color: #00265f;
+
+            .contacts__text__wrapper {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14pt;
+                color: #fff;
+            }
         }
     }
 
