@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    overflow-y: hidden;
 }
 
 main {
@@ -21,12 +20,113 @@ main {
     }
 }
 
-// .grid-container {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr 1fr;
-//     grid-template-rows: 1fr 1fr 1fr;
-//     gap: 0px 0px;
-//     height: 100%;
-// }
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    height: 100%;
+}
+
+.bsa-box {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: rgb(209, 252, 93);
+}
+
+.qa-box {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: rgb(93, 220, 252);
+}
+
+.js-box {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: rgb(180, 245, 2);
+}
+
+.java-box {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+}
+
+.extended-box {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color: rgb(193, 11, 248);
+}
+
+.extended-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    height: 100%;
+
+    .php-box {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: rgb(11, 35, 248);
+    }
+
+    .dotnet-box {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 6;
+        background-color: rgb(247, 5, 226);
+    }
+
+}
+
+.extended-info-container {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    background-color: rgb(5, 231, 247);
+    
+    
+    
+    .info-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        height: 100%;
+    
+    
+        .events-box {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    
+        .blog-box {
+            grid-column-start: 1;
+            grid-row-start: 3;
+            grid-row-end: 5; 
+        }
+    
+        .contacts-box {
+            grid-column-start: 1;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+    }
+
+}
 
 
