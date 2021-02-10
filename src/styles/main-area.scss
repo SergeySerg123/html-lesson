@@ -35,12 +35,27 @@ main {
     grid-row-end: 3;
     background-color: #fff;
 
-    .image__wrapper {
+    .image__wrapper, .button__wrapper {
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .btn {
+        width: 150px;
+        height: 30px;
+        background-color: rgb(64, 54, 212);
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        opacity: 0.85;
+
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
     }
 }
 
